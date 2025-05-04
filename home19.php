@@ -17,10 +17,10 @@ if (isset($_GET['delete_id']) && is_numeric($_GET['delete_id'])) {
 }
 
 // Database Connection
-$host = '91.216.107.164';
-$user = 'amzz2427862';
-$pass = '37qB5xqen4prX8@';
-$dbname = 'amzz2427862';
+$host = 'localhost';
+$user = 'root';
+$pass = 'root';
+$dbname = 'cloudbox';
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
